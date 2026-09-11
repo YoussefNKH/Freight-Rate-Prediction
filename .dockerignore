@@ -1,0 +1,10 @@
+.venv/
+.git/
+.gitignore
+__pycache__/
+*.pyc
+catboost_info/
+scorer_results/
+notebook.ipynb
+data/
+validation_predictions.csv

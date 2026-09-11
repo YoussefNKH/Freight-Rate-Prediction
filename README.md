@@ -17,6 +17,22 @@ python score.py --predictions validation_predictions.csv --december-predictions 
 
 The scorer validates both files and creates `scorer_results/candidate_december.png`.
 
+## Run the Streamlit app with Docker
+
+Build the image from the project folder:
+
+```bash
+docker build -t freight-rate-desk .
+```
+
+Start the app:
+
+```bash
+docker run --rm -p 8501:8501 freight-rate-desk
+```
+
+Open `http://localhost:8501` in your browser. The image includes the saved CatBoost model and preprocessing metadata from `models/`.
+
 ## Submit
 
 - GitHub repository containing your code, dependencies, and run instructions
